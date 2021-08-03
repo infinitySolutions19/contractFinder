@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('') }}
+                    {{ __('hello this is hasnain') }}
                 </div>
             </div>
         </div>
