@@ -63,7 +63,7 @@
 
                     <div class="logo">
 
-                        <a href="index.php">
+                        <a href="{{route('myhome')}}">
 
                             <img src="{{asset('frontend/images/logo/2.png')}}" alt="logo">
 
@@ -75,7 +75,7 @@
 
                         <li>
 
-                            <a href="adviceandtips.php">Advice andp Tips</a>
+                            <a href="{{route('livesearch')}}">Advice andp Tips</a>
 
                         </li>
 
@@ -87,7 +87,7 @@
 
                         <li>
 
-                            <a href="historicalsearch.php">Historical Search</a>
+                            <a href="{{route('historicalsearch')}}">Historical Search</a>
 
                         </li>
 
@@ -99,13 +99,13 @@
 
                                 <li>
 
-                                    <a href="findyourcompetitors.php">Find Your Competitors</a>
+                                    <a href="{{route('livesearch')}}">Find Your Competitors</a>
 
                                 </li>
 
                                 <li>
 
-                                    <a href="buyerbehaviouranalysis.php">Buyer Behaviour Analysis</a>
+                                    <a href="{{route('livesearch')}}">Buyer Behaviour Analysis</a>
 
                                 </li>
 
@@ -135,7 +135,7 @@
 
                                 <li>
 
-                                    <a href="product-detail.php">Product Detail</a>
+                                    <a href="{{route('tenderdetail')}}">Product Detail</a>
 
                                 </li>
 

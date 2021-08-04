@@ -14,4 +14,11 @@ class LiveSearchController extends Controller
         // return "hello from live search controller";
         return view('frontend.livesearch.searchlivetenders');
     }
+
+      public function historicalSearch()
+    {
+
+        // return "hello from live search controller";
+        return view('frontend.historicalsearch.historicalsearch');
+    }
 }
