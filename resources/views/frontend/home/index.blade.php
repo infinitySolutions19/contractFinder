@@ -1,14 +1,9 @@
     
+@extends('layout-frontend/app')
 
+  
 
-
-@include('include-frontend.header')
-
-
-
-    
-
-
+@section('content')
 
     <!--============= Banner Section Starts Here =============-->
 
@@ -906,12 +901,8 @@
     <!--============= How Section Starts Here =============-->
 
 
-    
 
-
-
-@include('include-frontend.footer')
-
+@endsection
 
 
    

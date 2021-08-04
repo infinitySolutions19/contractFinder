@@ -1,6 +1,10 @@
   
 
-@include('include-frontend.header')
+@extends('layout-frontend/app')
+
+  
+
+@section('content')
 
 
 
@@ -91,5 +95,4 @@
     <!--============= Upcoming Auction Section Ends Here =============-->
 
 
-
-     @include('include-frontend.footer')
+@endsection
