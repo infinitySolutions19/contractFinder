@@ -49,8 +49,33 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin');
+// admin Route Start Here
+
+Route::prefix('admin')->group(function ()
+{
+Route::middleware('auth:admin')->group(function ()
+{
+// Dashboard
+Route::get('/dashboard', [DashboardController::class, 'admin_dashboard']);
+// Logout
+
+Route::get('/logout', [DashboardController::class, 'logout'])->name('admin-logout');
+
+
+});
+ 
+
+
+Route::get('login', [DashboardController::class, 'index'])->name('admin.login');
+Route::post('/login', [DashboardController::class, 'store'])->name('admin-loginAttempt');
+Route::post('/sendpassword', [DashboardController::class, 'sendpassword'])->name('sendpassword');
+
+
+});
+
+// admin Route End Here
+
      
-Route::get('/admin/login', [DashboardController::class, 'login'])->name('admin.login');
+
  
 //Faisal's Code Ends's

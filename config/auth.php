@@ -40,6 +40,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+         'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+  
 
         'api' => [
             'driver' => 'token',
@@ -71,6 +76,13 @@ return [
             'model' => App\Models\User::class,
         ],
 
+  
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\AdminUser::class,
+        ],
+
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
@@ -90,7 +102,7 @@ return [
     | considered valid. This security feature keeps tokens short-lived so
     | they have less time to be guessed. You may change this as needed.
     |
-    */
+    */ 
 
     'passwords' => [
         'users' => [
