@@ -79,8 +79,7 @@ Route::post('/sendpassword', [DashboardController::class, 'sendpassword'])->name
      
 
 
-Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin');     
-Route::get('/admin/login', [DashboardController::class, 'login'])->name('admin.login');
+
 
  
 //Faisal's Code Ends's

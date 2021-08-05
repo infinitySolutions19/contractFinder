@@ -15,7 +15,7 @@ $this->middleware('guest:admin')->except(['logout','admin_dashboard']);
 }
 public function index()
 {
-
+ 
 return view('admin.login');
 }   
 
