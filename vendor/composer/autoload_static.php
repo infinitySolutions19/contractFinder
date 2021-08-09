@@ -528,6 +528,7 @@ class ComposerStaticInit0f5d903c1648a06327efe760f69e24ab
         'App\\Http\\Controllers\\admin\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/DashboardController.php',
         'App\\Http\\Controllers\\frontendControllers\\home\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/frontendControllers/home/HomeController.php',
         'App\\Http\\Controllers\\frontendControllers\\livesearch\\LiveSearchController' => __DIR__ . '/../..' . '/app/Http/Controllers/frontendControllers/livesearch/LiveSearchController.php',
+        'App\\Http\\Controllers\\frontendControllers\\tenderdetailpage\\TenderDetailController' => __DIR__ . '/../..' . '/app/Http/Controllers/frontendControllers/tenderdetailpage/TenderDetailController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',

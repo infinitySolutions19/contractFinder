@@ -19,6 +19,7 @@ return array(
     'App\\Http\\Controllers\\admin\\DashboardController' => $baseDir . '/app/Http/Controllers/admin/DashboardController.php',
     'App\\Http\\Controllers\\frontendControllers\\home\\HomeController' => $baseDir . '/app/Http/Controllers/frontendControllers/home/HomeController.php',
     'App\\Http\\Controllers\\frontendControllers\\livesearch\\LiveSearchController' => $baseDir . '/app/Http/Controllers/frontendControllers/livesearch/LiveSearchController.php',
+    'App\\Http\\Controllers\\frontendControllers\\tenderdetailpage\\TenderDetailController' => $baseDir . '/app/Http/Controllers/frontendControllers/tenderdetailpage/TenderDetailController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
