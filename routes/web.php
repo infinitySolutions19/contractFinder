@@ -36,6 +36,10 @@ Route::get('/', function () {
 //Hasnain's Code Start's
 
 Route::get('myhome',[HomeController::class,'index'])->name('myhome');
+
+// "Dont Touch or Hit And Use  This route Its private "
+Route::get('apiTest',[HomeController::class,'apiTest'])->name('apiTest');
+// "Dont Touch This route Its private "
 Route::get('livesearch',[LiveSearchController::class,'index'])->name('livesearch');
 Route::get('historicalsearch',[LiveSearchController::class,'historicalSearch'])->name('historicalsearch');
 Route::get('tenderdetail',[TenderDetailController::class,'index'])->name('tenderdetail');
