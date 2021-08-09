@@ -1,5 +1,7 @@
     
 @extends('layout-frontend/app')
+@extends('include-frontend.header')
+@extends('include-frontend.footer')
 
   
 
