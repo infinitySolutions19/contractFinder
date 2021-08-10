@@ -11,8 +11,11 @@ class apidata extends Model
 
     protected $fillable = [
         'title',
+        'title_slug',
         'description',
+        'summary',
         'cpv',
+        'cpvjson', 
         'location',
         'published_date',
         'oicd',

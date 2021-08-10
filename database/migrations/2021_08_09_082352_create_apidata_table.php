@@ -15,11 +15,14 @@ class CreateApidataTable extends Migration
     {
         Schema::create('apidata', function (Blueprint $table) {
 
-
+ 
             $table->id();
             $table->string('title', 500 )->nullable();
+            $table->string('title_slug', 500 )->nullable();
             $table->text('description', 1000 )->nullable();
+            $table->text('summary', 1000 )->nullable();
             $table->string('cpv', 200 )->nullable();
+             $table->json('cpvjson', 200 )->nullable(); 
             $table->string('location', 300 )->nullable();
             $table->dateTime('published_date')->nullable();
             $table->string('oicd', 500 )->nullable();
@@ -36,7 +39,7 @@ class CreateApidataTable extends Migration
             $table->string('buyer_name_2', 200 )->nullable();
             $table->string('supplier_name', 200 )->nullable();
             $table->string('api_type', 200 )->nullable();
-            $table->text('object', 1000 )->nullable();
+            $table->json('object')->nullable();
             $table->string('tender_id', 200 )->nullable();
             $table->string('initiation_time', 200 )->nullable();
             $table->text('api_url', 500 )->nullable();
