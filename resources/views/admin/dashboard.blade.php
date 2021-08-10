@@ -85,9 +85,9 @@
           <tr>
             <td class="table-plus">
               <div class="name-avatar d-flex align-items-center">
-                <div class="avatar mr-2 flex-shrink-0">
+                {{-- <div class="avatar mr-2 flex-shrink-0">
                   <img src="vendors/images/photo4.jpg" class="border-radius-100 shadow" width="40" height="40" alt="">
-                </div>
+                </div> --}}
                 <div class="txt">
                   <div class="weight-600">Jennifer O. Oster</div>
                 </div>
@@ -105,7 +105,7 @@
               </div>
             </td>
           </tr>
-          <tr>
+        {{--   <tr>
             <td class="table-plus">
               <div class="name-avatar d-flex align-items-center">
                 <div class="avatar mr-2 flex-shrink-0">
@@ -265,7 +265,7 @@
                 <a href="#" data-color="#e95959"><i class="icon-copy dw dw-delete-3"></i></a>
               </div>
             </td>
-          </tr>
+          </tr> --}}
         </tbody>
       </table>
     </div>

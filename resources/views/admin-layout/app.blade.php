@@ -25,7 +25,5 @@
         @include('includes-admin.alerts')
        @yield('content')
       @yield('footer')
- 
-
   </body>
 </html>

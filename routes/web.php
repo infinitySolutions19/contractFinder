@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontendControllers\home\HomeController;
 use App\Http\Controllers\frontendControllers\livesearch\LiveSearchController;
 use App\Http\Controllers\frontendControllers\tenderdetailpage\TenderDetailController;
+use App\Http\Controllers\admin\UserController;
+use App\Http\Controllers\admin\AddUserController;
 //Hasnain's Code Ends's
 
 
@@ -61,7 +63,7 @@ Route::prefix('admin')->group(function ()
 Route::middleware('auth:admin')->group(function ()
 {
 // Dashboard
-Route::get('/dashboard', [DashboardController::class, 'admin_dashboard']);
+// Route::get('/dashboard', [DashboardController::class, 'admin_dashboard']);
 // Logout
 
 Route::get('/logout', [DashboardController::class, 'logout'])->name('admin-logout');
@@ -70,7 +72,12 @@ Route::get('/logout', [DashboardController::class, 'logout'])->name('admin-logou
 });
  
 
-
+Route::get('/dashboard', [DashboardController::class, 'admin_dashboard']);
+Route::get('/user', [UserController::class, 'index']);
+Route::get('/adduser', [AddUserController::class, 'index']);
+Route::get('useredit/{id}', [AddUserController::class, 'userEdit']);
+// Route::get('userdelete/{id}', [AddUserController::class, 'userDelete']);
+Route::post('/adduser', [AddUserController::class, 'addUser'])->name('adduser');
 Route::get('login', [DashboardController::class, 'index'])->name('admin.login');
 Route::post('/login', [DashboardController::class, 'store'])->name('admin-loginAttempt');
 Route::post('/sendpassword', [DashboardController::class, 'sendpassword'])->name('sendpassword');
