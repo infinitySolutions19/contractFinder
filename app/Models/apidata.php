@@ -17,6 +17,7 @@ class apidata extends Model
         'cpv',
         'cpvjson', 
         'location',
+        'location2',
         'published_date',
         'oicd',
         'tid',
